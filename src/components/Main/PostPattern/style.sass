@@ -1,0 +1,78 @@
+@import '../../../styles/_variables'
+
+.innerSection__postWrapper
+  display: flex
+  flex-direction: column
+  background-color: #fff
+  border: 1px solid $borderColor
+  padding: 15px 25px 10px
+  margin-bottom: 40px
+  .innerSection__postHeader
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    .innerSection__channelLogo
+      width: 28px
+    .main__text
+      color: $textColor
+      font-size: 14px
+      &:nth-child(2)
+        margin-left: 10px
+        &:after
+          content: ''
+          display: inline-block
+          width: 3px
+          height: 3px
+          line-height: 14px
+          border-radius: 50%
+          margin: 4px 5px
+          background-color: $textColor
+  .innerSection__postMain
+    display: flex
+    justify-content: space-between
+    flex-grow: 0
+    max-height: 50%
+    .innerSection__postMainText
+      width: 49%
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 6
+      -webkit-box-orient: vertical
+      font-size: 14px
+      line-height: 16px
+      text-overflow: ellipsis
+      height: 96px
+    .innerSection__postMainImg
+      width: 49%
+  .innerSection__postFooter
+    margin-top: 18px
+    display: flex
+    justify-content: space-between
+    .innerSection__votesWrapper
+      display: flex
+      align-items: center
+      .innerSection__voteCount
+        margin: 0 5px
+        font-size: 14px
+        color: $textColor
+      .label
+        top: -50px
+    .innerSection__commentsWrapper
+      display: flex
+      align-items: center
+      .labelToggler
+        height: 24px
+      .innerSection__commentNumber
+        margin: 0 15px 0 5px
+        font-size: 14px
+        color: $textColor
+      .label
+        top: 55px
+        left: 50%
+        transform: translateX(-50%)
+      .main__buttonWrapper
+        position: relative
+
+.innerSection__postWrapper.active
+  .main__listWrapper
+    display: bloc

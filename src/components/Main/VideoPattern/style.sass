@@ -1,0 +1,150 @@
+@import '../../../styles/_variables'
+
+.main__filmWrapper
+  margin-bottom: 40px
+  min-width: 240px
+  cursor: pointer
+  .main__filmShortWrapper
+    position: relative
+    .main__videoButtonWrapper
+      position: absolute
+      color: #fff
+      top: 0
+      right: 0
+      margin: 4px 4px 0 0
+      display: none
+      align-items: center
+      overflow: hidden
+      border-radius: 2px
+      display: none
+      flex-direction: row-reverse
+      justify-content: reflex-end
+      &:nth-child(3)
+        top: 30px
+      .main__videoTextWrapper
+        background-color: #000000ee
+        margin-right: 1px
+        font-size: 14px
+        padding: 0 4px
+        height: 24px
+        white-space: nowrap
+        position: relative
+        transform: translateX(100%)
+        transition: .3s
+        transition-delay: 0s
+        display: flex
+        align-items: center
+      .main__videoButtonIconWrapper
+        background-color: #000000ee
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 24px
+        height: 24px
+        z-index: 2
+        .main__videoButtonIcon
+          filter: $iconColor
+          width: 18px
+        &:hover ~ .main__videoTextWrapper
+          transform: translateX(0)
+          transition: .3s
+          transition-delay: .3s
+    .main__filmTimeWrapper
+      position: absolute
+      bottom: 10px
+      right: 10px
+      background-color: #000000ee
+      padding: 2px 4px
+      border-radius: 2px
+      transition: .3s
+      transition-delay: .3s
+      .main__filmTime
+        color: white
+        font-size: 12px
+  .main__descWrapper
+    display: flex
+    position: relative
+    .main__authorAvatarWrapper
+      .main__authorAvatar
+        width: 36px
+        height: 36px
+        margin: 12px 12px 0 0
+    .main__textWrapper
+      flex-shrink: 1
+      flex-grow: 1
+      .main__titleWrapper
+        .main__title
+          text-overflow: ellipsis
+          overflow: hidden
+          max-height: 40px
+          line-height: 20px
+          font-size: 18px
+          font-weight: 500
+          margin: 12px 0 6px
+      .main__text
+        font-size: 14px
+        color: $textColor
+        display: inline-block
+      .main__views:after
+        content: ''
+        display: inline-block
+        width: 3px
+        height: 3px
+        line-height: 14px
+        border-radius: 50%
+        margin: 4px 5px
+        background-color: $textColor
+    .main__optionsWrapper
+      padding-top: 12px
+      visibility: hidden
+      flex-shrink: 0
+      position: relative
+      .main__more
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          height: 26px
+          width: 26px
+          border-radius: 50%
+          transition: .3s
+          padding: 2px
+          &:active
+            background-color: $borderColor
+  &:hover
+    .main__videoButtonWrapper
+      display: flex
+    .main__filmTimeWrapper
+      opacity: 0
+    .main__descWrapper
+      .main__optionsWrapper
+        visibility: visible
+
+.main__listWrapper
+  background-color: #fff
+  .main__list
+    padding: 8px 0 6px
+    border: 1px solid $borderColor
+    border-radius: 3px
+    .main__listItem
+      padding: 0 36px 0 16px
+      width: 280px
+      .main__listImg
+        width: 24px
+        height: 24px
+        margin-right: 16px
+        filter: $iconColor
+      .main__listText
+        font-size: 14px
+        height: 40px
+        align-items: center
+        white-space: nowrap
+        line-height: 40px
+      &:hover
+        background-color: $hoverColor
+      &:active
+        color: #000
+
+.active.main__descWrapper
+  .main__optionsWrapper
+    visibility: visible

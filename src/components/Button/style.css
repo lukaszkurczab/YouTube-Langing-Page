@@ -1,0 +1,31 @@
+.navButton {
+  padding: 0 24px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+}
+
+.navButton .navButton__icon {
+  width: 22px;
+  margin-right: 24px;
+  -webkit-filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+          filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+}
+
+.navButton .navButton__icon.color {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.navButton .navButton__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.navButton:hover {
+  background-color: #f0f0f0;
+}
+/*# sourceMappingURL=style.css.map */

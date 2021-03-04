@@ -1,0 +1,68 @@
+.aside {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  height: calc(100vh - 56px);
+  width: 240px;
+  margin-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aside .aside__title {
+  color: #606060;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-left: 24px;
+}
+
+.aside .aside__linksWrapper {
+  padding: 0 24px;
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aside .aside__linksWrapper:nth-child(1) {
+  margin-top: 16px;
+}
+
+.aside .aside__linksWrapper:nth-child(2) {
+  margin-top: 12px;
+}
+
+.aside .aside__linksWrapper .aside__link {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 3px 7px 0 0;
+  color: #606060;
+}
+
+.aside .licence {
+  margin: 16px 24px 0 24px;
+  font-size: 13px;
+  color: #a4a4a4;
+}
+
+.hiddenAside {
+  left: -100%;
+}
+
+.navButton__icon.active {
+  -webkit-filter: invert(19%) sepia(99%) saturate(7442%) hue-rotate(3deg) brightness(96%) contrast(115%);
+          filter: invert(19%) sepia(99%) saturate(7442%) hue-rotate(3deg) brightness(96%) contrast(115%);
+}
+/*# sourceMappingURL=style.css.map */

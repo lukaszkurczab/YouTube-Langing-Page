@@ -1,0 +1,89 @@
+.notificationBox {
+  width: 90vw;
+  max-width: 480px;
+  right: 0;
+  border-left: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  background-color: #f9f9f9;
+  max-height: 70vh;
+}
+
+.notificationBox .header__listTitleWrapper {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4px 8px 4px 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notificationBox .header__listTitleWrapper .header__listTitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.notificationBox .header__listTitleWrapper .notifications__imgWrapper {
+  height: 40px;
+  width: 40px;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.notificationBox .header__listTitleWrapper .notifications__imgWrapper .notifications__img {
+  -webkit-filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+          filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+}
+
+.notificationBox .header__listTitleWrapper .notifications__imgWrapper:active {
+  background-color: #e2e2e2;
+}
+
+.notificationBox .notification__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 16px 16px 4px;
+}
+
+.notificationBox .notification__wrapper .notification__avatarWrapper {
+  margin-right: 16px;
+}
+
+.notificationBox .notification__wrapper .notification__avatarWrapper .notification__avatar {
+  width: 48px;
+}
+
+.notificationBox .notification__wrapper .notification__textWrapper {
+  width: 232px;
+  text-align: left;
+}
+
+.notificationBox .notification__wrapper .notification__textWrapper .notification__text {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.notificationBox .notification__wrapper .notification__filmShortWrapper {
+  width: 86px;
+  height: 48px;
+  margin: 0 56px 0 16px;
+}
+
+.notificationBox .notification__wrapper:hover {
+  background-color: #f0f0f0;
+}
+
+.header__list.ownScrollBar::-webkit-scrollbar {
+  width: 10px;
+}
+/*# sourceMappingURL=style.css.map */

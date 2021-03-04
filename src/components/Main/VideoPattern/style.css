@@ -1,0 +1,247 @@
+.main__filmWrapper {
+  margin-bottom: 40px;
+  min-width: 240px;
+  cursor: pointer;
+}
+
+.main__filmWrapper .main__filmShortWrapper {
+  position: relative;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__videoButtonWrapper {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  margin: 4px 4px 0 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 2px;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: reflex-end;
+      -ms-flex-pack: reflex-end;
+          justify-content: reflex-end;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__videoButtonWrapper:nth-child(3) {
+  top: 30px;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__videoButtonWrapper .main__videoTextWrapper {
+  background-color: #000000ee;
+  margin-right: 1px;
+  font-size: 14px;
+  padding: 0 4px;
+  height: 24px;
+  white-space: nowrap;
+  position: relative;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__videoButtonWrapper .main__videoButtonIconWrapper {
+  background-color: #000000ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__videoButtonWrapper .main__videoButtonIconWrapper .main__videoButtonIcon {
+  -webkit-filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+          filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+  width: 18px;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__videoButtonWrapper .main__videoButtonIconWrapper:hover ~ .main__videoTextWrapper {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__filmTimeWrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #000000ee;
+  padding: 2px 4px;
+  border-radius: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.main__filmWrapper .main__filmShortWrapper .main__filmTimeWrapper .main__filmTime {
+  color: white;
+  font-size: 12px;
+}
+
+.main__filmWrapper .main__descWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main__filmWrapper .main__descWrapper .main__authorAvatarWrapper .main__authorAvatar {
+  width: 36px;
+  height: 36px;
+  margin: 12px 12px 0 0;
+}
+
+.main__filmWrapper .main__descWrapper .main__textWrapper {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main__filmWrapper .main__descWrapper .main__textWrapper .main__titleWrapper .main__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 12px 0 6px;
+}
+
+.main__filmWrapper .main__descWrapper .main__textWrapper .main__text {
+  font-size: 14px;
+  color: #606060;
+  display: inline-block;
+}
+
+.main__filmWrapper .main__descWrapper .main__textWrapper .main__views:after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  line-height: 14px;
+  border-radius: 50%;
+  margin: 4px 5px;
+  background-color: #606060;
+}
+
+.main__filmWrapper .main__descWrapper .main__optionsWrapper {
+  padding-top: 12px;
+  visibility: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+
+.main__filmWrapper .main__descWrapper .main__optionsWrapper .main__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__filmWrapper .main__descWrapper .main__optionsWrapper .main__more img {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 2px;
+}
+
+.main__filmWrapper .main__descWrapper .main__optionsWrapper .main__more img:active {
+  background-color: #e2e2e2;
+}
+
+.main__filmWrapper:hover .main__videoButtonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__filmWrapper:hover .main__filmTimeWrapper {
+  opacity: 0;
+}
+
+.main__filmWrapper:hover .main__descWrapper .main__optionsWrapper {
+  visibility: visible;
+}
+
+.main__listWrapper {
+  background-color: #fff;
+}
+
+.main__listWrapper .main__list {
+  padding: 8px 0 6px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+}
+
+.main__listWrapper .main__list .main__listItem {
+  padding: 0 36px 0 16px;
+  width: 280px;
+}
+
+.main__listWrapper .main__list .main__listItem .main__listImg {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  -webkit-filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+          filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+}
+
+.main__listWrapper .main__list .main__listItem .main__listText {
+  font-size: 14px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  line-height: 40px;
+}
+
+.main__listWrapper .main__list .main__listItem:hover {
+  background-color: #f0f0f0;
+}
+
+.main__listWrapper .main__list .main__listItem:active {
+  color: #000;
+}
+
+.active.main__descWrapper .main__optionsWrapper {
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */

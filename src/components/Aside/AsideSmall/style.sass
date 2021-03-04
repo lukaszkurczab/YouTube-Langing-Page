@@ -1,0 +1,21 @@
+@import '../../../styles/_variables'
+
+.aside.asideSmall
+  width: 72px
+  z-index: 7
+  .buttonWrapper
+    flex-direction: column
+    height: auto
+    margin-top: 18px
+    .navButton__icon 
+      margin-right: 0
+    .navButton__text
+      max-width: none
+      font-size: 10px
+      margin-top: 10px
+      color: $iconColor
+  
+  .ownScrollBar
+    &:hover
+      &::-webkit-scrollbar
+       width: 0

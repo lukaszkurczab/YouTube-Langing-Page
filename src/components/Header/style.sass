@@ -1,0 +1,79 @@
+@import '../../styles/_variables'
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  padding: 0 34px 0 16px
+  height: 56px
+  width: 100vw
+  background-color: rgba(255, 255, 255, .98)
+  display: flex
+  align-items: center
+  justify-content: space-between
+  z-index: 30
+  .header__userOptionsWrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+
+  .header__profilePictureWrapper
+      height: 32px
+      width: 32px
+      margin: 0 13px 0 17px
+      position: relative
+      .header__profilePicture
+        border-radius: 50%
+        box-sizing: content-box
+        cursor: pointer
+        &:active
+          box-shadow: 0px 0px 0px 1px rgba(6,95,212,1)
+         
+      .header__listWrapper
+        right: 140%
+        top: 0
+
+  .header__iconWrapper
+    position: relative
+
+  .header__listWrapper
+    position: absolute
+    top: 100%
+    background-color: #fff
+    min-width: 270px
+    max-height: 90vh
+    z-index: 3
+
+.createToggler
+  .header__listWrapper
+    left: 0
+
+.appToggler
+  .header__listWrapper
+    right: 0
+
+.active
+  .header__listWrapper
+    display: block
+
+.labelToggler
+  position: relative
+  .label
+    position: absolute
+    top: 57px
+    z-index: 2
+    padding: 8px 5px
+    background-color: #707070dd
+    border-radius: 2px
+    color: white
+    font-size: 12px
+    height: 30px
+    white-space: nowrap
+    display: none
+  &:hover
+    .label
+      display: block
+  &.search__submitWrapper
+    .label
+      left: 15%
+      top: 51px

@@ -1,0 +1,29 @@
+.aside.asideSmall {
+  width: 72px;
+  z-index: 7;
+}
+
+.aside.asideSmall .buttonWrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  margin-top: 18px;
+}
+
+.aside.asideSmall .buttonWrapper .navButton__icon {
+  margin-right: 0;
+}
+
+.aside.asideSmall .buttonWrapper .navButton__text {
+  max-width: none;
+  font-size: 10px;
+  margin-top: 10px;
+  color: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+}
+
+.aside.asideSmall .ownScrollBar:hover::-webkit-scrollbar {
+  width: 0;
+}
+/*# sourceMappingURL=style.css.map */

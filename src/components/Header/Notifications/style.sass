@@ -1,0 +1,55 @@
+@import '../../../styles/_variables'
+
+.notificationBox
+  width: 90vw
+  max-width: 480px
+  right: 0
+  border-left: 1px solid $borderColor
+  border-bottom: 1px solid $borderColor
+  border-right: 1px solid $borderColor
+  background-color: #f9f9f9
+  max-height: 70vh
+  .header__listTitleWrapper
+    background-color: #fff
+    display: flex
+    justify-content: space-between
+    padding: 4px 8px 4px 16px
+    align-items: center
+    .header__listTitle
+      font-size: 16px
+      font-weight: 400
+    .notifications__imgWrapper
+      height: 40px
+      width: 40px
+      padding: 6px
+      cursor: pointer
+      border-radius: 50%
+      transition: .3s
+      .notifications__img
+        filter: $iconColor
+      &:active
+        background-color: $borderColor
+  .notification__wrapper
+    display: flex
+    padding: 16px 16px 16px 4px
+    .notification__avatarWrapper
+      margin-right: 16px
+      .notification__avatar
+        width: 48px
+    .notification__textWrapper
+      width: 232px
+      text-align: left
+      .notification__text
+        font-weight: 400
+        font-size: 15px
+        margin-bottom: 8px
+    .notification__filmShortWrapper
+      width: 86px
+      height: 48px
+      margin: 0 56px 0 16px
+    &:hover
+      background-color: $hoverColor
+
+.header__list.ownScrollBar
+  &::-webkit-scrollbar
+    width: 10px

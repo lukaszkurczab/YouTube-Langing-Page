@@ -1,0 +1,46 @@
+@import '../../../styles/_variables'
+
+.aside
+  position: fixed
+  background-color: #fff
+  top: 0
+  left: 0
+  z-index: 8
+  height: calc(100vh - 56px)
+  width: 240px
+  margin-top: 56px
+  display: flex
+  flex-direction: column
+  .aside__title
+    color: $textColor
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 500
+    margin-top: 12px
+    margin-left: 24px
+  .aside__linksWrapper
+    padding: 0 24px
+    width: 240px
+    display: flex
+    flex-wrap: wrap
+    &:nth-child(1)
+      margin-top: 16px
+    &:nth-child(2)
+      margin-top: 12px
+    .aside__link
+      font-size: 13px
+      font-weight: 500
+      white-space: nowrap
+      margin: 3px 7px 0 0
+      color: $textColor
+
+  .licence
+    margin: 16px 24px 0 24px
+    font-size: 13px
+    color: #a4a4a4
+
+.hiddenAside
+  left: -100%
+
+.navButton__icon.active
+  filter: invert(19%) sepia(99%) saturate(7442%) hue-rotate(3deg) brightness(96%) contrast(115%)

@@ -1,0 +1,34 @@
+.logo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+
+.logo__wrapper .logo__sideNavToggler {
+  padding: 8px;
+  margin-right: 16px;
+}
+
+.logo__wrapper .logo__homeButtonWrapper {
+  width: 129px;
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__wrapper .logo__homeButtonWrapper .logo__homeButtonImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  width: 80px;
+}
+/*# sourceMappingURL=style.css.map */

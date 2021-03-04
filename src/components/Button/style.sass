@@ -1,0 +1,21 @@
+@import '../../styles/_variables'
+
+.navButton
+  padding: 0 24px
+  height: 40px
+  font-weight: 400
+  font-size: 14px
+  width: 100%
+  .navButton__icon
+    width: 22px
+    margin-right: 24px
+    filter: $iconColor
+    &.color
+      filter: none
+  .navButton__text
+    white-space: nowrap
+    text-overflow: ellipsis
+    max-width: 80%
+    overflow: hidden
+  &:hover
+    background-color: $hoverColor

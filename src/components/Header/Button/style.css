@@ -1,0 +1,43 @@
+.headerButton__wrapper {
+  margin: 0 4px;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.headerButton__wrapper .headerButton__icon {
+  max-height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+          filter: invert(38%) sepia(4%) saturate(3%) hue-rotate(340deg) brightness(99%) contrast(96%);
+}
+
+.headerButton__wrapper:hover {
+  cursor: pointer;
+}
+
+.headerButton__wrapper:active {
+  background-color: #e2e2e2;
+}
+/*# sourceMappingURL=style.css.map */

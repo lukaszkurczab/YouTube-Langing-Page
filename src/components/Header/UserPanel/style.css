@@ -1,0 +1,37 @@
+.header__listWrapper.userPanel .header__listItemWrapper .header__accountWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+}
+
+.header__listWrapper.userPanel .header__listItemWrapper .header__accountWrapper .header__accountImgWrapper {
+  margin-right: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header__listWrapper.userPanel .header__listItemWrapper .header__accountWrapper .header__accountImgWrapper .header__accountImg {
+  height: 40px;
+}
+
+.header__listWrapper.userPanel .header__listItemWrapper .header__accountWrapper .header__accountTextWrapper .header__accountName {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header__listWrapper.userPanel .header__listItemWrapper .header__accountWrapper .header__accountTextWrapper .header__accountMail {
+  font-size: 14px;
+}
+
+.header__listWrapper.userPanel .header__listItemWrapper .header__accountWrapper .header__accountTextWrapper .header__accountManage {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #065fd4;
+}
+
+.header__listWrapper.userPanel::-webkit-scrollbar {
+  width: 0;
+}
+/*# sourceMappingURL=style.css.map */
